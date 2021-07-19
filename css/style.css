@@ -1,0 +1,93 @@
+article {
+	margin          : auto;
+	width           : 1200px;
+	background-color: rgba(135, 206, 250, 0.25);
+	padding         : 20px;
+	text-align      : center;
+	box-shadow      : 1px 1px 5px lightskyblue;
+	border          : 1px solid rgba(173, 216, 230, 0.685);
+	border-radius   : 10px;
+}
+
+select {
+	margin       : 10px;
+	border-radius: 5px;
+}
+
+input {
+	border-radius: 5px;
+}
+
+#container_flex1,
+#container_flex2,
+#container_flex3,
+#container_flex4 {
+	display       : flex;
+	flex-direction: row;
+}
+
+#temp1,
+#temp2,
+#temp3,
+#temp4 {
+	flex          : 1;
+	display       : flex;
+	flex-direction: row;
+}
+
+#container_flex1>ul,
+#container_flex2>ul,
+#container_flex3>ul,
+#container_flex4>ul {
+	flex          : 1;
+	display       : flex;
+	flex-direction: column;
+}
+
+#wind1,
+#wind2,
+#wind3,
+#wind4 {
+	/* flex          : 1; */
+	display       : flex;
+	flex-direction: row;
+}
+
+ul {
+	list-style-type: none;
+	padding        : 0;
+}
+
+.spanTemperaruraOnly1 {
+	display         : inline-block;
+	width           : 60px;
+	background-color: lightsalmon;
+}
+
+.winterSpeedP,
+.temperaturaP {
+	text-align   : left;
+	border-bottom: 1px solid lightgray;
+	font-weight  : 600;
+	font-size    : 16px;
+}
+
+p {
+	flex          : 1;
+	display       : flex;
+	flex-direction: column;
+}
+
+p span {
+	display         : inline-block;
+	width           : 60px;
+	text-align      : center;
+	background-color: lightskyblue;
+	transform       : skew(345deg);
+	margin          : auto;
+}
+
+img {
+	height: 75px;
+	margin: -10px;
+}

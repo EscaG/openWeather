@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="shortcut icon" href="#" type="image/x-icon">
+	<link rel="stylesheet" href="library/css/bootstrap.min.css">
+
+	<link rel="stylesheet" href="css/style.css">
+	<title>DZ 17 jQuery Open Weather</title>
+</head>
+<p></p>
+
+<body>
+	<article>
+
+		<input type="text" placeholder="Город" id="inpCity">
+		<button onclick="getCityInput()">Выбрать</button>
+		<div id="app"></div>
+		<div id="locality"></div>
+
+
+		<nav>
+			<div class="nav nav-tabs" id="nav-tab" role="tablist">
+				<a class="nav-item nav-link active" id="nav-today-tab" data-toggle="tab" href="#nav-today" role="tab"
+					aria-controls="nav-today" aria-selected="true">Сегодня</a>
+				<a class="nav-item nav-link" id="nav-tomorrow-tab" data-toggle="tab" href="#nav-tomorrow" role="tab"
+					aria-controls="nav-tomorrow" aria-selected="false">Завтра</a>
+				<a class="nav-item nav-link" id="nav-aftertomorrow-tab" data-toggle="tab" href="#nav-aftertomorrow" role="tab"
+					aria-controls="nav-aftertomorrow" aria-selected="false">Послезавтра</a>
+				<a class="nav-item nav-link" id="nav-andMore-tab" data-toggle="tab" href="#nav-andMore" role="tab"
+					aria-controls="nav-andMore" aria-selected="false">И еще один денёк</a>
+			</div>
+		</nav>
+
+
+		<div class="tab-content" id="nav-tabContent">
+			<div class="tab-pane fade show active" id="nav-today" role="tabpanel" aria-labelledby="nav-today-tab">
+				<div id="container_flex1"></div>
+				<div id="onlyStringTemp1"></div>
+				<div id="temp1"></div>
+				<div id="onlyStringWind1"></div>
+				<div id="wind1"></div>
+				<!-- первый -->
+			</div>
+			<div class="tab-pane fade" id="nav-tomorrow" role="tabpanel" aria-labelledby="nav-tomorrow-tab">
+				<div id="container_flex2"></div>
+				<div id="onlyStringTemp2"></div>
+				<div id="temp2"></div>
+				<div id="onlyStringWind2"></div>
+				<div id="wind2"></div>
+				<!-- второй -->
+			</div>
+			<div class="tab-pane fade" id="nav-aftertomorrow" role="tabpanel" aria-labelledby="nav-aftertomorrow-tab">
+				<div id="container_flex3"></div>
+				<div id="onlyStringTemp3"></div>
+				<div id="temp3"></div>
+				<div id="onlyStringWind3"></div>
+				<div id="wind3"></div>
+				<!-- третий -->
+			</div>
+			<div class="tab-pane fade" id="nav-andMore" role="tabpanel" aria-labelledby="nav-andMore-tab">
+				<div id="container_flex4"></div>
+				<div id="onlyStringTemp4"></div>
+				<div id="temp4"></div>
+				<div id="onlyStringWind4"></div>
+				<div id="wind4"></div>
+				<!-- четвертый -->
+			</div>
+		</div>
+
+	</article>
+
+
+
+
+
+
+
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+	<script src="library/js/bootstrap.min.js"></script>
+	<script src="js/main.js"></script>
+</body>
+
+</html>
